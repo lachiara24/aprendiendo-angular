@@ -7,6 +7,9 @@ import { ContenidoModule } from './contenido/contenido.module';
 import { SharedModule } from './shared/shared.module';
 import { ClientesModule } from './clientes/clientes.module';
 
+// importo modulo del escaner QR
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +18,9 @@ import { ClientesModule } from './clientes/clientes.module';
     BrowserModule,
     SharedModule,
     ContenidoModule,
-    ClientesModule
+    ClientesModule,
+    // Escaner
+    ZXingScannerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
