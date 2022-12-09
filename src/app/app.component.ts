@@ -11,6 +11,7 @@ export class AppComponent {
   public cameras:MediaDeviceInfo[]=[];
   public myDevice!: MediaDeviceInfo;
   public scannerEnabled=false;
+  // Resultados como lista
   public results:string[]=[];
 
   constructor() {
@@ -35,4 +36,6 @@ export class AppComponent {
       }
     })    
   }
+
+  
 }

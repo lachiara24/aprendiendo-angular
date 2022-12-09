@@ -7,6 +7,9 @@ import { AltaClienteComponent } from './alta-cliente/alta-cliente.component';
 import { FormsModule } from '@angular/forms';
 import { ListadoClientesComponent } from './listado-clientes/listado-clientes.component';
 
+// importo modulo del generador QR
+import { QRCodeModule } from 'angularx-qrcode';
+
 @NgModule({
   declarations: [
     AltaClienteComponent,
@@ -14,7 +17,8 @@ import { ListadoClientesComponent } from './listado-clientes/listado-clientes.co
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    QRCodeModule
   ],
   providers: [
     ClientesService

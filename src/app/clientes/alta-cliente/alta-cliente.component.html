@@ -35,3 +35,5 @@
     <button class="btn btn-primary mb-2" (click)="this.nuevoCliente()">Guardar</button>
   </div>  
 </div>
+
+<qrcode [qrdata]="cliente.cif" [width]="256" [errorCorrectionLevel]="'H'"></qrcode>
