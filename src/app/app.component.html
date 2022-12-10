@@ -21,28 +21,23 @@
     </div>    
 </div> -->
 
-<div class="row">
+<!-- <div class="row">
     <div class="col m-3">
-        <select #selectList (change)="selectCamera(selectList.value)">
-        <option *ngFor="let camera of cameras" value={{camera.label}}>
-        {{ camera.label }}
-        </option>
-        </select>
-  
-        <zxing-scanner style="width: 500px;"
-            [enable]="scannerEnabled"
-            [device]="myDevice"
-            (camerasFound)="camerasFoundHandler($event)"
-            (scanSuccess)="scanSuccessHandler($event)"
-        ></zxing-scanner>
-        <p *ngFor="let result of results">{{result}}</p> 
+        <app-lector-qr></app-lector-qr>
     </div>
     <div class="col m-3">
         <app-alta-cliente></app-alta-cliente>
     </div>
+</div> -->
+
+<div class="row">
+    <div class="col-md-6 m-2">
+        <app-cliente></app-cliente>
+    </div>
+    <div class="col">
+        <app-lector-qr></app-lector-qr>
+    </div>
 </div>
-
-
 
 
  

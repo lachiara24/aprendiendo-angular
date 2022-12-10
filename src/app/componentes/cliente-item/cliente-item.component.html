@@ -1,0 +1,16 @@
+<div class="cliente row">
+    <div class="col">
+        <h4>
+            {{cliente.nombre}}
+            <!-- <fa-icon [icon]="faTrash"></fa-icon> -->
+        </h4>
+        <p>DNI: {{cliente.dni}}</p>
+        <p>Fecha de pago: {{cliente.f_pago}}</p>
+        <p>Fecha de vencimiento: {{cliente.f_venc}}</p>  
+    </div>
+    <div class="col-3 ml-auto mr-2">
+        <qrcode 
+        *ngIf="cliente.dni"
+        [qrdata]="cliente.dni" [width]="200" [errorCorrectionLevel]="'H'"></qrcode> 
+    </div>
+</div>

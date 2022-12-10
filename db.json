@@ -1,0 +1,32 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nombre": "Ludmila Chiara",
+            "dni": "43904066",
+            "f_pago": "12/05/22",
+            "f_venc": "12/06/22" 
+        },
+        {
+            "id": 2,
+            "nombre": "Cliente 2",
+            "dni": "20405025",
+            "f_pago": "25/05/22",
+            "f_venc": "25/06/22" 
+        },
+        {
+            "id": 3,
+            "nombre": "Cliente 895",
+            "dni": "36251950",
+            "f_pago": "12/05/22",
+            "f_venc": "12/06/22" 
+        },
+        {
+            "id": 4,
+            "nombre": "Cliente 1002",
+            "dni": "69885000",
+            "f_pago": "12/05/22",
+            "f_venc": "12/06/22" 
+        }
+    ]
+}
